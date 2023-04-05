@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;300;400&display=swap');
+* {
+    font-family: 'Playfair Display';
+}
+header {
+  background-color: #0891b2;
+  transform: translateY(-65vh) skewY(-30deg) ;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(67vh) skewY(30deg) ;
+}
+.portrait { 
+  position: relative;
+  width: min(90%, 620px);
+}
+.portrait img {
+  width: 100%;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .2);
+}
+.portrait h1 {
+  color: white;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+  margin: 1rem;
+  font-size: 20vw;
+  font-weight: 300;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+}
+.about {
+  background-color: white;
+  line-height: 2;
+}
+.about h1 {
+  margin-bottom: 0;
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+.about p {
+  margin-top: 0;
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 1.5rem;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+}
+.contact-info svg{
+  margin: 0 1em;
+  height: 3em;
+  width: 3em;
+}
+
+@media (min-width: 950px) {
+  header {
+    transform: translateY(-60%) skewY(-15deg);
+    padding: 9rem;
+  }
+  .banner {
+    display: block;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .2);
+  
+    position: relative;
+    transform: translateY(90%) skewY(15deg);
+  }
+  .portrait {
+    position: static;
+    width: min(55%, 35vw);
+    float: left;
+  }
+  .portrait img { 
+    transform-origin: bottom right;
+    transform: scale(1.2) translateX(-1rem);
+  }
+  .portrait h1 {
+    bottom: initial;
+    right: 1rem;
+    transform: translateY(-120%);
+    font-size: 4rem;
+  }
+  .about {
+    padding: 3rem 2rem;
+  }
+  .contact-info {
+    display: none;
+  }
+}
+
+@media (min-width: 1375px) {
+  .banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: none;
+    transform: translateY(70%) skewY(15deg);
+
+  }
+  .portrait {
+    position: relative;
+    flex: 1;
+    float: none;
+    width: 550px;
+  }
+
+  .portrait img {
+    transform: none;
+  }
+
+  .portrait h1 {
+    transform: none;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  .about {
+    flex: 1;
+    padding: 1em 2em;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .2);
+
+  }
+  .contact-info {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
