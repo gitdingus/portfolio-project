@@ -1,0 +1,62 @@
+footer {
+  margin-top: 8em;
+  background-color: #0891b2;
+  color: white;
+}
+footer .contact-info {
+  padding: 1.5em;
+  padding-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .contact-info .links {
+  align-self: center;
+}
+
+footer h1 {
+  margin: 0;
+  align-self: center;
+  font-size: 2.5em;
+}
+
+footer p {
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+}
+footer img {
+  max-width: 100%;
+}
+
+footer svg {
+  height: 50px;
+  width: 50px;
+  margin: 0 .5em;
+}
+
+@media (min-width: 950px) {
+  footer {
+    padding: 4em;
+    padding-bottom: 5em;
+    display: flex;
+    align-items: center;
+    gap: 4em;
+  }
+
+  footer h1 {
+    font-size: 3em;
+    align-self: flex-start;
+  }
+
+  footer p {
+    font-size: 1.5em;
+  }
+
+  footer .contact-info .links {
+    align-self: flex-start;
+  }
+
+  footer .portrait {
+    max-width: 50%;
+  }
+}
